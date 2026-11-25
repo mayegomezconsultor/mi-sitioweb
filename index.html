@@ -5,15 +5,101 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#FFFFFF">
   <meta name="description" content="Consultoría empresarial para pequeñas empresas de servicios. Maye Gómez conecta personas, clientes, dinero y operaciones en un sistema que tu equipo puede usar.">
-  <meta property="og:title" content="Maye Gómez · Consultora de empresas">
-  <meta property="og:description" content="Tu empresa creció. Diseñemos una forma más clara de gestionarla.">
-  <meta property="og:type" content="website">
   <title>Maye Gómez · Consultora de empresas</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="growth.css"><link rel="stylesheet" href="solutions.css">
   <script src="script.js" defer></script><script src="growth.js" defer></script><script src="solutions.js" defer></script>
+
+  <!-- Favicon & Brand Icons -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="assets/site.webmanifest">
+
+  <!-- OpenGraph / Social Sharing (E-E-A-T & Trend standard) -->
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Maye Gómez · Consultora de empresas">
+  <meta property="og:title" content="Maye Gómez · Consultora de empresas">
+  <meta property="og:description" content="Consultoría empresarial para pequeñas empresas de servicios. Maye Gómez conecta personas, clientes, dinero y operaciones en un sistema que tu equipo puede usar.">
+  <meta property="og:url" content="https://mayegomez.com/">
+  <meta property="og:image" content="https://mayegomez.com/assets/og-image.png">
+  <meta property="og:image:secure_url" content="https://mayegomez.com/assets/og-image.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Maye Gómez — Consultora de Empresas">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Maye Gómez · Consultora de empresas">
+  <meta name="twitter:description" content="Consultoría empresarial para pequeñas empresas de servicios. Maye Gómez conecta personas, clientes, dinero y operaciones en un sistema que tu equipo puede usar.">
+  <meta name="twitter:image" content="https://mayegomez.com/assets/og-image.png">
+  <meta name="twitter:image:alt" content="Maye Gómez — Consultora de Empresas">
+
+  <!-- Structured Data: Organization & Person Schema for Top E-E-A-T & Google Rich Snippets -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://mayegomez.com/#person",
+        "name": "Maye Gómez",
+        "jobTitle": "Consultora de Empresas y Especialista en Gestión de Equipos",
+        "description": "Consultora empresarial especializada en diseño organizacional, gestión de personas, operaciones y sistemas para pequeñas empresas de servicios.",
+        "url": "https://mayegomez.com",
+        "image": "https://mayegomez.com/assets/og-image.png",
+        "sameAs": [
+          "https://wa.me/584124784922"
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://mayegomez.com/#service",
+        "name": "Maye Gómez · Consultoría de Empresas",
+        "url": "https://mayegomez.com",
+        "logo": "https://mayegomez.com/assets/logo-maye-gomez.png",
+        "image": "https://mayegomez.com/assets/og-image.png",
+        "description": "Consultoría y acompañamiento integral en gestión de personal, procesos operativos y dirección estratégica para pymes de servicios en Hispanoamérica y España.",
+        "founder": { "@id": "https://mayegomez.com/#person" },
+        "areaServed": [
+          { "@type": "Country", "name": "Venezuela" },
+          { "@type": "Country", "name": "España" },
+          { "@type": "Country", "name": "Colombia" },
+          { "@type": "Country", "name": "México" },
+          { "@type": "Country", "name": "Estados Unidos" },
+          { "@type": "Country", "name": "Chile" }
+        ],
+        "serviceType": [
+          "Consultoría Empresarial",
+          "Gestión de Personal y Recursos Humanos",
+          "Diseño de Procesos y Operaciones",
+          "Inducción y Onboarding de Equipos"
+        ],
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Sistema de Gestión de 4 Pilares",
+            "url": "https://mayegomez.com/servicios/sistema-4-pilares.html"
+          },
+          {
+            "@type": "Offer",
+            "name": "Consultoría de Gestión de Personal + Clear Onboarding",
+            "url": "https://mayegomez.com/servicios/gestion-personal.html"
+          },
+          {
+            "@type": "Offer",
+            "name": "Formación: Oficina de RRHH de cero a experta",
+            "url": "https://mayegomez.com/servicios/formacion-rrhh.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#contenido">Ir al contenido</a>
@@ -798,13 +884,73 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="section-wrap footer-main">
-      <a class="brand footer-brand" href="#inicio" aria-label="Maye Gómez, volver al inicio"><img src="propuestas/assets/logo-maye-gomez.png" alt="Maye Gómez" width="92" height="66" loading="lazy"><span>Consultora de empresas</span></a>
-      <p>Empresas con claridad.<br>Equipos que saben avanzar.</p>
-      <div class="footer-links"><a href="#testimonios">Testimonios</a><a href="index.html#newsletter">Newsletter</a><a href="privacidad.html">Tus datos</a><a href="#soluciones">Soluciones</a><a href="#metodo">Mi enfoque</a><a href="https://wa.me/584124784922?text=Hola%20Maye%2C%20quiero%20conversar%20sobre%20mi%20empresa." target="_blank" rel="noopener noreferrer">WhatsApp <span aria-hidden="true">↗</span></a></div>
+    <footer class="site-footer">
+    <div class="section-wrap footer-seo-grid">
+      <!-- Columna 1: Marca & E-E-A-T -->
+      <div class="footer-col-brand">
+        <a class="footer-brand" href="index.html#inicio" aria-label="Maye Gómez, volver al inicio">
+          <img src="assets/logo-maye-gomez.png" alt="Maye Gómez Consultora" width="54" height="39" loading="lazy">
+          <span class="footer-brand-text">
+            <strong>Maye Gómez</strong>
+            <span>Consultora de empresas</span>
+          </span>
+        </a>
+        <p class="footer-bio">Consultoría estratégica y sistemas humanos para pequeñas empresas de servicios. Transformamos el desorden operativo en claridad, estructura y autonomía de equipo.</p>
+        <div class="footer-status-pill">
+          <span class="status-dot-pulse" aria-hidden="true"></span>
+          <span>Acompañamiento 1 a 1 · Cupos limitados 2026</span>
+        </div>
+      </div>
+
+      <!-- Columna 2: Soluciones (Clúster SEO) -->
+      <div>
+        <h3 class="footer-heading">Soluciones</h3>
+        <ul class="footer-nav-list">
+          <li><a href="servicios/sistema-4-pilares.html">Sistema de 4 Pilares <span class="footer-mini-tag">Integral</span></a></li>
+          <li><a href="servicios/gestion-personal.html">Gestión de Personal + Onboarding</a></li>
+          <li><a href="servicios/formacion-rrhh.html">Oficina de RRHH de 0 a Experta</a></li>
+          <li><a href="servicios/minicurso-rrhh.html">Minicurso Gratuito de RRHH</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3: Metodología & Recursos -->
+      <div>
+        <h3 class="footer-heading">Metodología</h3>
+        <ul class="footer-nav-list">
+          <li><a href="index.html#metodo">El Enfoque de 4 Pilares</a></li>
+          <li><a href="index.html#testimonios">Casos y Testimonios</a></li>
+          <li><a href="index.html#descarga">Checklist Diagnóstico (PDF)</a></li>
+          <li><a href="index.html#newsletter">Cartas Semanales de Maye</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 4: Contacto Directo & Confianza -->
+      <div>
+        <h3 class="footer-heading">Contacto Directo</h3>
+        <ul class="footer-nav-list">
+          <li>
+            <a class="footer-wa-link" href="https://wa.me/584124784922?text=Hola%20Maye%2C%20quiero%20conversar%20sobre%20mi%20empresa." target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+                <path d="M9.8 9.2a1 1 0 0 0-.8.4c-.4.5-.7 1.2-.5 2 .3 1.1 1.3 2.3 2.4 3 .8.5 1.5.3 2-.1.4-.3.5-.6.5-.8s-.3-.4-.5-.5l-.8-.3c-.2-.1-.4 0-.6.2l-.3.3c-.2.2-.3.2-.5.1-.5-.2-1.1-.7-1.5-1.1-.4-.4-.9-1-1.1-1.5-.1-.2-.1-.3.1-.5l.3-.3c.2-.2.3-.4.2-.6l-.3-.8c-.1-.2-.3-.5-.6-.6z"/>
+              </svg>
+              <span>Conversar con Maye</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </li>
+          <li><span class="footer-micro-note">Respuesta personalizada en &lt; 24h</span></li>
+          <li><a href="privacidad.html">Privacidad y Protección de Datos</a></li>
+        </ul>
+      </div>
     </div>
-    <div class="section-wrap footer-bottom"><span>© <span id="year">2026</span> Maye Gómez Consultora</span><span>Consultoría empresarial · modalidad remota</span></div>
+
+    <!-- Barra Inferior Legal / Territorial -->
+    <div class="footer-bottom-bar">
+      <div class="section-wrap footer-bottom-wrap">
+        <span>© <span id="year">2026</span> Maye Gómez · Todos los derechos reservados</span>
+        <span class="footer-bottom-geo">Consultoría de empresas · Modalidad remota (Hispanoamérica y España)</span>
+      </div>
+    </div>
   </footer>
 
 

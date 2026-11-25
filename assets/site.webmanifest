@@ -1,0 +1,20 @@
+{
+  "name": "Maye Gómez · Consultora de Empresas",
+  "short_name": "Maye Gómez",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#002731",
+  "theme_color": "#004B5F",
+  "icons": [
+    {
+      "src": "/assets/favicon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}
