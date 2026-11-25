@@ -8,7 +8,7 @@ PAGES = [
     {
         "file": "index.html",
         "prefix": "",
-        "url": "https://mayegomez.com/",
+        "url": "https://mayegomez.vercel.app/",
         "title": "Maye Gómez · Consultora de empresas",
         "desc": "Consultoría empresarial para pequeñas empresas de servicios. Maye Gómez conecta personas, clientes, dinero y operaciones en un sistema que tu equipo puede usar.",
         "is_home": True
@@ -16,7 +16,7 @@ PAGES = [
     {
         "file": "privacidad.html",
         "prefix": "",
-        "url": "https://mayegomez.com/privacidad",
+        "url": "https://mayegomez.vercel.app/privacidad",
         "title": "Uso de tus datos · Maye Gómez Consultora",
         "desc": "Información transparente sobre la protección, tratamiento y privacidad de tus datos de contacto con Maye Gómez.",
         "is_home": False
@@ -24,7 +24,7 @@ PAGES = [
     {
         "file": "gracias.html",
         "prefix": "",
-        "url": "https://mayegomez.com/gracias",
+        "url": "https://mayegomez.vercel.app/gracias",
         "title": "Confirma tu correo · Maye Gómez Consultora",
         "desc": "Confirma tu solicitud para recibir la Checklist Diagnóstico y las cartas semanales de gestión de Maye Gómez.",
         "is_home": False
@@ -32,7 +32,7 @@ PAGES = [
     {
         "file": "servicios/sistema-4-pilares.html",
         "prefix": "../",
-        "url": "https://mayegomez.com/servicios/sistema-4-pilares",
+        "url": "https://mayegomez.vercel.app/servicios/sistema-4-pilares",
         "title": "Sistema de Gestión de 4 Pilares · Consultoría a Medida · Maye Gómez",
         "desc": "Conectamos personas, clientes, dinero y operaciones en un sistema a la medida de tu empresa. Acompañamiento directo en implementación con 2 llamadas semanales, WhatsApp y correo.",
         "is_home": False
@@ -40,7 +40,7 @@ PAGES = [
     {
         "file": "servicios/gestion-personal.html",
         "prefix": "../",
-        "url": "https://mayegomez.com/servicios/gestion-personal",
+        "url": "https://mayegomez.vercel.app/servicios/gestion-personal",
         "title": "Consultoría de Gestión de Personal + Clear Onboarding · Maye Gómez",
         "desc": "Estructuramos roles, ciclo de vida del empleado y rutas de inducción para estabilizar a tu equipo. Acompañamiento a medida con 2 llamadas semanales, WhatsApp y correo.",
         "is_home": False
@@ -48,7 +48,7 @@ PAGES = [
     {
         "file": "servicios/formacion-rrhh.html",
         "prefix": "../",
-        "url": "https://mayegomez.com/servicios/formacion-rrhh",
+        "url": "https://mayegomez.vercel.app/servicios/formacion-rrhh",
         "title": "Oficina de RRHH de cero a experta · Formación Práctica · Maye Gómez",
         "desc": "Una ruta de formación de 30 horas para conectar lo que aprendes con decisiones y herramientas de Recursos Humanos en tu empresa.",
         "is_home": False
@@ -56,7 +56,7 @@ PAGES = [
     {
         "file": "servicios/minicurso-rrhh.html",
         "prefix": "../",
-        "url": "https://mayegomez.com/servicios/minicurso-rrhh",
+        "url": "https://mayegomez.vercel.app/servicios/minicurso-rrhh",
         "title": "Minicurso de RRHH en 6 módulos · Maye Gómez Consultora",
         "desc": "Una entrada breve y guiada para reconocer qué necesita organizar tu empresa y acercarte a la gestión de Recursos Humanos con más claridad.",
         "is_home": False
@@ -70,25 +70,25 @@ JSON_LD_SCHEMA = """  <!-- Structured Data: Organization & Person Schema for Top
     "@graph": [
       {
         "@type": "Person",
-        "@id": "https://mayegomez.com/#person",
+        "@id": "https://mayegomez.vercel.app/#person",
         "name": "Maye Gómez",
         "jobTitle": "Consultora de Empresas y Especialista en Gestión de Equipos",
         "description": "Consultora empresarial especializada en diseño organizacional, gestión de personas, operaciones y sistemas para pequeñas empresas de servicios.",
-        "url": "https://mayegomez.com",
-        "image": "https://mayegomez.com/assets/og-image.png",
+        "url": "https://mayegomez.vercel.app",
+        "image": "https://mayegomez.vercel.app/assets/og-image.png",
         "sameAs": [
           "https://wa.me/584124784922"
         ]
       },
       {
         "@type": "ProfessionalService",
-        "@id": "https://mayegomez.com/#service",
+        "@id": "https://mayegomez.vercel.app/#service",
         "name": "Maye Gómez · Consultoría de Empresas",
-        "url": "https://mayegomez.com",
-        "logo": "https://mayegomez.com/assets/logo-maye-gomez.png",
-        "image": "https://mayegomez.com/assets/og-image.png",
+        "url": "https://mayegomez.vercel.app",
+        "logo": "https://mayegomez.vercel.app/assets/logo-maye-gomez.png",
+        "image": "https://mayegomez.vercel.app/assets/og-image.png",
         "description": "Consultoría y acompañamiento integral en gestión de personal, procesos operativos y dirección estratégica para pymes de servicios en Hispanoamérica y España.",
-        "founder": { "@id": "https://mayegomez.com/#person" },
+        "founder": { "@id": "https://mayegomez.vercel.app/#person" },
         "areaServed": [
           { "@type": "Country", "name": "Venezuela" },
           { "@type": "Country", "name": "España" },
@@ -107,17 +107,17 @@ JSON_LD_SCHEMA = """  <!-- Structured Data: Organization & Person Schema for Top
           {
             "@type": "Offer",
             "name": "Sistema de Gestión de 4 Pilares",
-            "url": "https://mayegomez.com/servicios/sistema-4-pilares.html"
+            "url": "https://mayegomez.vercel.app/servicios/sistema-4-pilares.html"
           },
           {
             "@type": "Offer",
             "name": "Consultoría de Gestión de Personal + Clear Onboarding",
-            "url": "https://mayegomez.com/servicios/gestion-personal.html"
+            "url": "https://mayegomez.vercel.app/servicios/gestion-personal.html"
           },
           {
             "@type": "Offer",
             "name": "Formación: Oficina de RRHH de cero a experta",
-            "url": "https://mayegomez.com/servicios/formacion-rrhh.html"
+            "url": "https://mayegomez.vercel.app/servicios/formacion-rrhh.html"
           }
         ]
       }
@@ -132,6 +132,7 @@ def build_head_tags(page):
     desc = page["desc"]
     
     tags = f"""  <!-- Favicon & Brand Icons -->
+  <link rel="shortcut icon" href="{p}favicon.ico">
   <link rel="icon" type="image/x-icon" href="{p}favicon.ico">
   <link rel="icon" type="image/svg+xml" href="{p}assets/favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="{p}assets/favicon.png">
@@ -145,8 +146,8 @@ def build_head_tags(page):
   <meta property="og:title" content="{title}">
   <meta property="og:description" content="{desc}">
   <meta property="og:url" content="{url}">
-  <meta property="og:image" content="https://mayegomez.com/assets/og-image.png">
-  <meta property="og:image:secure_url" content="https://mayegomez.com/assets/og-image.png">
+  <meta property="og:image" content="https://mayegomez.vercel.app/assets/og-image.png">
+  <meta property="og:image:secure_url" content="https://mayegomez.vercel.app/assets/og-image.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -156,7 +157,7 @@ def build_head_tags(page):
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{title}">
   <meta name="twitter:description" content="{desc}">
-  <meta name="twitter:image" content="https://mayegomez.com/assets/og-image.png">
+  <meta name="twitter:image" content="https://mayegomez.vercel.app/assets/og-image.png">
   <meta name="twitter:image:alt" content="Maye Gómez — Consultora de Empresas">"""
 
     if page.get("is_home"):
