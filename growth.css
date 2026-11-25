@@ -3598,3 +3598,154 @@
     white-space: normal;
   }
 }
+
+
+/* ========================================================
+   FULL-BLEED SEAMLESS EDITORIAL HERO (WHITE DIFFUSED TO PHOTO)
+   ======================================================== */
+.hero.hero-fullbleed {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #ffffff !important;
+  position: relative !important;
+  overflow: hidden !important;
+  display: block !important;
+  min-height: min(760px, calc(100svh - var(--nav-height, 80px))) !important;
+}
+
+.hero.hero-fullbleed::before,
+.hero.hero-fullbleed::after {
+  display: none !important;
+}
+
+.hero-fullbleed-layout {
+  position: relative;
+  width: 100%;
+  min-height: min(760px, calc(100svh - var(--nav-height, 80px)));
+  display: flex;
+  align-items: center;
+}
+
+.hero-fullbleed-content {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: clamp(48px, 6vw, 84px) clamp(24px, 4vw, 48px);
+  pointer-events: none;
+}
+
+.hero-fullbleed .hero-copy {
+  max-width: 630px !important;
+  pointer-events: auto;
+}
+
+/* Backing Photo Layer Spanning Full Height on the Right */
+.hero-fullbleed-backdrop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 58%;
+  min-width: 540px;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.hero-fullbleed-backdrop img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+  /* Multi-axis soft fade mask so it blends seamlessly into the surrounding white */
+  -webkit-mask-image: 
+    linear-gradient(to right, transparent 0%, rgba(0,0,0,0.12) 15%, rgba(0,0,0,0.75) 42%, #000 65%, #000 100%),
+    linear-gradient(to bottom, transparent 0%, #000 12%, #000 88%, transparent 100%),
+    linear-gradient(to left, transparent 0%, #000 10%);
+  mask-image: 
+    linear-gradient(to right, transparent 0%, rgba(0,0,0,0.12) 15%, rgba(0,0,0,0.75) 42%, #000 65%, #000 100%),
+    linear-gradient(to bottom, transparent 0%, #000 12%, #000 88%, transparent 100%),
+    linear-gradient(to left, transparent 0%, #000 10%);
+  -webkit-mask-composite: source-in;
+  mask-composite: intersect;
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-fullbleed:hover .hero-fullbleed-backdrop img {
+  transform: scale(1.015);
+}
+
+/* Progressive multi-directional white diffusion gradient overlay */
+.hero-fullbleed-vignette {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: 
+    /* Heavy linear fade from left (white) to right (revealing photo) */
+    linear-gradient(to right, #ffffff 0%, #ffffff 18%, rgba(255, 255, 255, 0.92) 35%, rgba(255, 255, 255, 0.5) 55%, rgba(255, 255, 255, 0.12) 75%, transparent 100%),
+    /* Soft top fade so it blends under header */
+    linear-gradient(to bottom, #ffffff 0%, rgba(255, 255, 255, 0.7) 6%, transparent 18%),
+    /* Soft bottom fade into next section */
+    linear-gradient(to top, #ffffff 0%, rgba(255, 255, 255, 0.8) 8%, transparent 22%),
+    /* Soft right edge softening */
+    linear-gradient(to left, rgba(255, 255, 255, 0.3) 0%, transparent 8%);
+}
+
+@media (max-width: 1024px) {
+  .hero-fullbleed-backdrop {
+    width: 50%;
+    min-width: 440px;
+  }
+}
+
+@media (max-width: 860px) {
+  .hero.hero-fullbleed {
+    min-height: auto !important;
+  }
+  .hero-fullbleed-layout {
+    flex-direction: column;
+    min-height: auto;
+  }
+  .hero-fullbleed-content {
+    padding-block: 40px 24px;
+    text-align: center;
+  }
+  .hero-fullbleed .hero-copy {
+    margin-inline: auto;
+  }
+  .hero-fullbleed .hero-badge-pill {
+    margin-inline: auto;
+  }
+  .hero-fullbleed .hero-actions {
+    justify-content: center;
+  }
+  .hero-fullbleed .hero-proof-capsules {
+    margin-inline: auto;
+  }
+  .hero-fullbleed-backdrop {
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    height: 440px;
+    margin-top: 10px;
+  }
+  .hero-fullbleed-backdrop img {
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, #000 15%, #000 85%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, #000 15%, #000 85%, transparent 100%);
+  }
+  .hero-fullbleed-vignette {
+    background: 
+      linear-gradient(to bottom, #ffffff 0%, transparent 25%),
+      linear-gradient(to top, #ffffff 0%, transparent 25%);
+  }
+}
