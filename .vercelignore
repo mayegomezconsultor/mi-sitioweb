@@ -1,0 +1,7 @@
+# Archivos que Vercel no debe compilar como servidores Node
+server.mjs
+package.json
+scripts/
+private/data/
+.env
+.env.local
