@@ -132,6 +132,7 @@ def build_head_tags(page):
     desc = page["desc"]
     
     tags = f"""  <!-- Favicon & Brand Icons -->
+  <link rel="icon" type="image/x-icon" href="{p}favicon.ico">
   <link rel="icon" type="image/svg+xml" href="{p}assets/favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="{p}assets/favicon.png">
   <link rel="apple-touch-icon" sizes="180x180" href="{p}assets/apple-touch-icon.png">
