@@ -1,0 +1,4 @@
+[DESCRIPCIÓN DEL PROYECTO EN JSON]
+Este proyecto guarda todo para mi modelo de negocios
+
+[INSTRUCCIONES PERSONALIZADAS]
