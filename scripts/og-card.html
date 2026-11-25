@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@400;500;600;700&display=swap');
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      width: 1200px;
+      height: 630px;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background: #00222b;
+      background: radial-gradient(circle at 15% 25%, rgba(0, 75, 95, 0.45) 0%, transparent 55%),
+                  radial-gradient(circle at 85% 75%, rgba(195, 157, 150, 0.2) 0%, transparent 55%),
+                  linear-gradient(135deg, #001c23 0%, #002731 50%, #003644 100%);
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 44px 56px;
+      position: relative;
+    }
+    .card-border {
+      position: absolute;
+      inset: 16px;
+      border: 1px solid rgba(195, 157, 150, 0.28);
+      border-radius: 20px;
+      pointer-events: none;
+    }
+    .left-col {
+      width: 630px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+      z-index: 2;
+    }
+    .brand-wrap {
+      display: inline-flex;
+      align-items: center;
+      gap: 14px;
+      background: #ffffff;
+      padding: 8px 18px 8px 12px;
+      border-radius: 18px;
+      width: fit-content;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3);
+    }
+    .brand-wrap img {
+      width: 52px;
+      height: auto;
+      display: block;
+    }
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.25;
+    }
+    .brand-text strong {
+      font-family: 'DM Serif Display', Georgia, serif;
+      color: #004B5F;
+      font-size: 1.05rem;
+      letter-spacing: -0.01em;
+    }
+    .brand-text span {
+      font-size: 0.65rem;
+      color: #52666E;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .card-headline {
+      font-family: 'DM Serif Display', Georgia, serif;
+      font-size: 2.75rem;
+      line-height: 1.15;
+      color: #ffffff;
+      letter-spacing: -0.02em;
+    }
+    .card-headline em {
+      font-style: italic;
+      color: #EDCCC6;
+    }
+    .card-desc {
+      font-size: 1.02rem;
+      line-height: 1.55;
+      color: rgba(255, 255, 255, 0.85);
+      font-weight: 400;
+    }
+    .pills-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 4px;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(195, 157, 150, 0.35);
+      border-radius: 999px;
+      font-size: 0.82rem;
+      color: #EDCCC6;
+      font-weight: 500;
+    }
+    .pill-green-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #34d399;
+      box-shadow: 0 0 10px #34d399;
+    }
+    .right-col {
+      width: 420px;
+      height: 520px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 2;
+    }
+    .photo-card {
+      width: 100%;
+      height: 100%;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 24px 48px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.15);
+      position: relative;
+      background: #FAF6F2;
+    }
+    .photo-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 10%;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="card-border"></div>
+  <div class="left-col">
+    <div class="brand-wrap">
+      <img src="../assets/logo-maye-gomez.png" alt="Maye Gómez">
+      <div class="brand-text">
+        <strong>Maye Gómez</strong>
+        <span>Consultora de empresas</span>
+      </div>
+    </div>
+    <h1 class="card-headline">Empresas con claridad. <em>Equipos que avanzan.</em></h1>
+    <p class="card-desc">Consultoría estratégica y sistemas humanos para pequeñas empresas de servicios. Transformamos el desorden en autonomía y resultados.</p>
+    <div class="pills-row">
+      <div class="pill">
+        <span class="pill-green-dot"></span>
+        <span>Acompañamiento 1 a 1</span>
+      </div>
+      <div class="pill">
+        <span>Sistema de 4 Pilares</span>
+      </div>
+    </div>
+  </div>
+  <div class="right-col">
+    <div class="photo-card">
+      <img src="../assets/maye-gomez-equipo-estrategia.png" alt="Maye Gómez - Fortalece tu equipo con una estrategia sólida">
+    </div>
+  </div>
+</body>
+</html>
