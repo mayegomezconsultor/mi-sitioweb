@@ -4,7 +4,7 @@ import { randomBytes, createHash } from 'node:crypto';
 import { readFile, mkdir } from 'node:fs/promises';
 import { resolve, dirname, extname } from 'node:path';
 import { fileURLToPath } from 'node:url';
-const ROOT=dirname(fileURLToPath(import.meta.url));
+const ROOT=resolve(dirname(fileURLToPath(import.meta.url)),"..");
 const hash=s=>createHash('sha256').update(s).digest('hex');
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const DAY=86400000;
